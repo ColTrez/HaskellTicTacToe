@@ -1,0 +1,34 @@
+cabal-version:      2.4
+name:               HaskellTicTacToe
+version:            0.1.0.0
+
+synopsis: Tic Tac Toe
+
+-- A longer description of the package.
+-- description:
+
+-- A URL where users can report bugs.
+-- bug-reports:
+
+-- The license under which the package is released.
+-- license:
+author:             Colin Trezise
+maintainer:         ctrezise@asu.edu
+
+-- A copyright notice.
+-- copyright:
+-- category:
+extra-source-files:
+    CHANGELOG.md
+    README.md
+
+executable HaskellTicTacToe
+    main-is:          Main.hs
+    other-modules: TypesAndConstants, DrawingFunctions
+
+    -- LANGUAGE extensions used by modules in this package.
+    -- other-extensions:
+    build-depends:    base ^>=4.14.2.0,
+                      gloss >= 1.13.0
+    hs-source-dirs:   app
+    default-language: Haskell2010
